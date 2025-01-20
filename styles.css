@@ -1,0 +1,71 @@
+General Body Styling
+body {
+    background: #000000;
+    color: #00e777;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Score Display */
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #00e777;
+    text-shadow: 0 0 10px #00e777, 0 0 20px #00e777;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Game Board */
+.grid {
+    position: relative;
+    width: 560px;
+    height: 400px;
+    background: #222;
+    border: 3px solid #00e777;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 231, 119, 0.5), 0 0 40px rgba(0, 231, 119, 0.5);
+    overflow: hidden;
+}
+
+/* Player Paddle */
+.user {
+    position: absolute;
+    width: 120px;
+    height: 15px;
+    background: linear-gradient(90deg, #e7c100, #f1f1f1);
+    border-radius: 10px;
+}
+
+/* Ball */
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #e8eeeb 40%, #000000 100%);
+    border-radius: 50%;
+}
+
+/* Blocks */
+.block {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background: white;
+    border-radius: 5px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.block:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
